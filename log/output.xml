@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20231028 19:52:14.451" rpa="false" schemaversion="4">
+<suite id="s1" name="Pierwszyrobot" source="E:\Studia WSB - Tester oprogramowania\23.09 - 24.09 selenium_robot framework\Selenium\pierwszyrobot.robot">
+<test id="s1-t1" name="Log in Wikipedia" line="14">
+<kw name="Open Browser">
+<arg>https://pl.wikipedia.org</arg>
+<arg>chrome</arg>
+<msg timestamp="20231028 19:52:14.465" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20231028 19:52:14.465" endtime="20231028 19:52:14.465"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>id:nieistniejace</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20231028 19:52:14.465" endtime="20231028 19:52:14.465"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>id:pt-login-2</arg>
+<arg>5</arg>
+<status status="NOT RUN" starttime="20231028 19:52:14.466" endtime="20231028 19:52:14.466"/>
+</kw>
+<kw name="Click Element">
+<arg>id:pt-login-2</arg>
+<status status="NOT RUN" starttime="20231028 19:52:14.467" endtime="20231028 19:52:14.467"/>
+</kw>
+<kw name="Input Text">
+<arg>id:wpName1</arg>
+<arg>RobotTests</arg>
+<status status="NOT RUN" starttime="20231028 19:52:14.467" endtime="20231028 19:52:14.467"/>
+</kw>
+<kw name="Input Password">
+<arg>id:wpPassword1</arg>
+<arg>RobotFramework</arg>
+<status status="NOT RUN" starttime="20231028 19:52:14.468" endtime="20231028 19:52:14.468"/>
+</kw>
+<kw name="Click Button">
+<arg>id:wpLoginAttempt</arg>
+<status status="NOT RUN" starttime="20231028 19:52:14.468" endtime="20231028 19:52:14.468"/>
+</kw>
+<kw name="Capture Page Screenshot">
+<status status="NOT RUN" starttime="20231028 19:52:14.469" endtime="20231028 19:52:14.469"/>
+</kw>
+<status status="FAIL" starttime="20231028 19:52:14.464" endtime="20231028 19:52:14.469">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20231028 19:52:14.452" endtime="20231028 19:52:14.469"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Pierwszyrobot">Pierwszyrobot</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231028 19:52:14.463" level="ERROR">Error in file 'E:\Studia WSB - Tester oprogramowania\23.09 - 24.09 selenium_robot framework\Selenium\pierwszyrobot.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'robotlibcore'
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\SeleniumLibrary\__init__.py", line 27, in &lt;module&gt;
+    from robotlibcore import DynamicCore
+PYTHONPATH:
+  C:\Users\Sylwia\AppData\Roaming\JetBrains\PyCharmCE2023.1\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  E:\Studia WSB - Tester oprogramowania\23.09 - 24.09 selenium_robot framework\Selenium
+  C:\Users\Sylwia\AppData\Roaming\JetBrains\PyCharmCE2023.1\plugins\robotframework-intellij\lib
+  C:\Users\Sylwia\AppData\Roaming\JetBrains\PyCharmCE2023.1\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Python311\python311.zip
+  C:\Python311\Lib
+  C:\Python311\DLLs
+  C:\Python311
+  C:\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
