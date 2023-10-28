@@ -39,9 +39,7 @@ else:
 
 today = datetime.datetime.today()
 short_time = today.strftime('__stamp%H%M%S')
-screen_name = 'screen' + short_time + '.png'
+screen_name = 'E:\\Studia WSB - Tester oprogramowania\\23.09 - 24.09 selenium_robot framework\\Selenium\\screeny\\' + 'screen' + short_time + '.png'
 driver.get_screenshot_as_file(screen_name)
 
-
-
-time.sleep(5)
+time.sleep(2)
