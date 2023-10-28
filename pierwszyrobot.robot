@@ -20,6 +20,3 @@ Log in Wikipedia
     Input Password    id:wpPassword1    RobotFramework
     Click Button    id:wpLoginAttempt
     Capture Page Screenshot
-
-
-
