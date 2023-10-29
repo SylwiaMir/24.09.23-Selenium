@@ -1,70 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20231028 21:21:50.022" rpa="false" schemaversion="4">
-<suite id="s1" name="Pierwszyrobot" source="E:\Studia WSB - Tester oprogramowania\23.09 - 24.09 selenium_robot framework\Selenium\pierwszyrobot.robot">
-<test id="s1-t1" name="Log in Wikipedia" line="14">
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20231029 13:22:31.277" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Cwiczenie" source="E:\Studia WSB - Tester oprogramowania\23.09 - 24.09 selenium_robot framework\Selenium\robot_cwiczenie.robot">
+<test id="s1-t1" name="Registration" line="18">
+<kw name="Open my browser">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://pl.wikipedia.org</arg>
+<arg>https://gotujmy.pl/forum/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231028 21:21:50.114" level="INFO">Opening browser 'chrome' to base url 'https://pl.wikipedia.org'.</msg>
-<status status="PASS" starttime="20231028 21:21:50.114" endtime="20231028 21:21:51.777"/>
+<msg timestamp="20231029 13:22:31.366" level="INFO">Opening browser 'chrome' to base url 'https://gotujmy.pl/forum/'.</msg>
+<status status="PASS" starttime="20231029 13:22:31.365" endtime="20231029 13:22:34.174"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231029 13:22:34.174" endtime="20231029 13:22:34.282"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Button</arg>
+<arg>xpath=//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:34.282" level="INFO">Clicking button 'xpath=//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]'.</msg>
+<status status="PASS" starttime="20231029 13:22:34.282" endtime="20231029 13:22:34.365"/>
+</kw>
+<status status="PASS" starttime="20231029 13:22:34.282" endtime="20231029 13:22:34.365"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231029 13:22:37.366" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231029 13:22:34.366" endtime="20231029 13:22:37.366"/>
+</kw>
+<status status="PASS" starttime="20231029 13:22:31.365" endtime="20231029 13:22:37.366"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="navTop"]/nav/ul[1]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:37.366" level="INFO">Clicking element 'xpath=//*[@id="navTop"]/nav/ul[1]/li[2]/a'.</msg>
+<status status="PASS" starttime="20231029 13:22:37.366" endtime="20231029 13:22:37.834"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Click Element</arg>
-<arg>id:nieistniejace</arg>
+<arg>xpath=//*[@id="user_register_form"]/fieldset</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id:nieistniejace</arg>
+<arg>xpath=//*[@id="user_register_form"]/fieldset</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231028 21:21:51.777" level="INFO">Clicking element 'id:nieistniejace'.</msg>
-<msg timestamp="20231028 21:21:51.872" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231028 21:21:51.873" level="FAIL">Element with locator 'id:nieistniejace' not found.</msg>
-<status status="FAIL" starttime="20231028 21:21:51.777" endtime="20231028 21:21:51.874"/>
+<msg timestamp="20231029 13:22:37.835" level="INFO">Clicking element 'xpath=//*[@id="user_register_form"]/fieldset'.</msg>
+<status status="PASS" starttime="20231029 13:22:37.834" endtime="20231029 13:22:37.875"/>
 </kw>
-<status status="PASS" starttime="20231028 21:21:51.777" endtime="20231028 21:21:51.874"/>
+<status status="PASS" starttime="20231029 13:22:37.834" endtime="20231029 13:22:37.875"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>id:pt-login-2</arg>
-<arg>5</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231028 21:21:51.874" endtime="20231028 21:21:51.891"/>
-</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id:pt-login-2</arg>
+<arg>xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231028 21:21:51.891" level="INFO">Clicking element 'id:pt-login-2'.</msg>
-<status status="PASS" starttime="20231028 21:21:51.891" endtime="20231028 21:21:53.026"/>
+<msg timestamp="20231029 13:22:37.875" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[1]'.</msg>
+<status status="PASS" starttime="20231029 13:22:37.875" endtime="20231029 13:22:37.915"/>
+</kw>
+<status status="PASS" starttime="20231029 13:22:37.875" endtime="20231029 13:22:37.915"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id:wpName1</arg>
-<arg>RobotTests</arg>
+<arg>xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[1]</arg>
+<arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231028 21:21:53.027" level="INFO">Typing text 'RobotTests' into text field 'id:wpName1'.</msg>
-<status status="PASS" starttime="20231028 21:21:53.027" endtime="20231028 21:21:53.083"/>
+<msg timestamp="20231029 13:22:37.916" level="INFO">Typing text 'sylwia@wp.pl' into text field 'xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[1]'.</msg>
+<status status="PASS" starttime="20231029 13:22:37.915" endtime="20231029 13:22:37.956"/>
 </kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id:wpPassword1</arg>
-<arg>RobotFramework</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231028 21:21:53.083" level="INFO">Typing password into text field 'id:wpPassword1'.</msg>
-<msg timestamp="20231028 21:21:53.102" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231028 21:21:53.136" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231028 21:21:53.083" endtime="20231028 21:21:53.136"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[2]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:37.956" level="INFO">Typing text 'sylwia@wp.pl' into text field 'xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[2]'.</msg>
+<status status="PASS" starttime="20231029 13:22:37.956" endtime="20231029 13:22:38.002"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>id:wpLoginAttempt</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231028 21:21:53.136" level="INFO">Clicking button 'id:wpLoginAttempt'.</msg>
-<status status="PASS" starttime="20231028 21:21:53.136" endtime="20231028 21:21:58.247"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[3]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:38.003" level="INFO">Typing text '1@#4G' into text field 'xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[3]'.</msg>
+<status status="PASS" starttime="20231029 13:22:38.003" endtime="20231029 13:22:38.044"/>
 </kw>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231028 21:21:58.360" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231028 21:21:58.248" endtime="20231028 21:21:58.360"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[4]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:38.044" level="INFO">Typing text '1@#4G' into text field 'xpath=/html/body/div[2]/div/div[2]/section/form/fieldset/input[4]'.</msg>
+<status status="PASS" starttime="20231029 13:22:38.044" endtime="20231029 13:22:38.084"/>
 </kw>
-<status status="PASS" starttime="20231028 21:21:50.113" endtime="20231028 21:21:58.360"/>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20231029 13:22:38.084" level="INFO">Verifying checkbox '//*[@id="newsletter_agree"]' is not selected.</msg>
+<status status="PASS" starttime="20231029 13:22:38.084" endtime="20231029 13:22:38.123"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:38.124" level="INFO">Selecting checkbox '//*[@id="newsletter_agree"]'.</msg>
+<status status="PASS" starttime="20231029 13:22:38.123" endtime="20231029 13:22:38.158"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20231029 13:22:38.159" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input' is not selected.</msg>
+<status status="PASS" starttime="20231029 13:22:38.159" endtime="20231029 13:22:38.175"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:38.175" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input'.</msg>
+<status status="PASS" starttime="20231029 13:22:38.175" endtime="20231029 13:22:38.203"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20231029 13:22:38.203" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input' is not selected.</msg>
+<status status="PASS" starttime="20231029 13:22:38.203" endtime="20231029 13:22:38.220"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:38.221" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input'.</msg>
+<status status="PASS" starttime="20231029 13:22:38.221" endtime="20231029 13:22:38.249"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>//*[@id="user_register_form"]/fieldset/footer/button</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="user_register_form"]/fieldset/footer/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231029 13:22:38.249" level="INFO">Clicking element '//*[@id="user_register_form"]/fieldset/footer/button'.</msg>
+<status status="PASS" starttime="20231029 13:22:38.249" endtime="20231029 13:22:39.218"/>
+</kw>
+<status status="PASS" starttime="20231029 13:22:38.249" endtime="20231029 13:22:39.219"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231029 13:22:44.219" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231029 13:22:39.219" endtime="20231029 13:22:44.219"/>
+</kw>
+<status status="PASS" starttime="20231029 13:22:31.365" endtime="20231029 13:22:44.219"/>
 </test>
-<status status="PASS" starttime="20231028 21:21:50.023" endtime="20231028 21:21:58.360"/>
+<status status="PASS" starttime="20231029 13:22:31.278" endtime="20231029 13:22:44.220"/>
 </suite>
 <statistics>
 <total>
@@ -73,7 +157,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Pierwszyrobot">Pierwszyrobot</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Cwiczenie">Robot Cwiczenie</stat>
 </suite>
 </statistics>
 <errors>
