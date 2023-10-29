@@ -17,3 +17,4 @@ except ZeroDivisionError:
 
 
 print('Dalsza czesc programu')
+
